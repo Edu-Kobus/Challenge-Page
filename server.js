@@ -24,7 +24,7 @@ server.get("/content-page", function(req, res){
     return res.render("content-page")
 })
 
-server.get("/courses", function(req, res){
+server.get("/videos", function(req, res){
     const id = req.query.id
 
     return res.send(`O id fornecido na rota é: ${id}`);
