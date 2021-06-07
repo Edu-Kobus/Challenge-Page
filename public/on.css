@@ -1,0 +1,98 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap";
+
+:root{
+    --color-rocket:#5d2c85;
+}
+
+body {
+    background:var(--color-rocket);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background: rgb(245, 243, 246) ;
+    padding: 30px 30px;
+}
+
+a:link {
+ text-decoration:none;
+}
+
+header div {
+    text-align: center;
+}
+
+header img {
+    max-width: 300px;
+    margin-right: 18%;
+}
+
+.icon img{
+    height: 40px;
+    display:table;
+}
+
+/*===CARDS===*/
+.cards {
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns*/
+    gap: 20px; /*espaço entre colunas*/
+}
+
+.card{
+    background-color: var(--color-rocket);
+    filter: saturate(60%);
+}
+
+.card_image-container img {
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price{
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modal-overlay{
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height:90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position:absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}

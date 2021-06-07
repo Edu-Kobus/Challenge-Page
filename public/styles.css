@@ -1,0 +1,141 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"; /*import do href da fonte do HTML diretamente no CSS*/
+
+/*reset do estilo do navegador */
+/* *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
+
+
+:root{
+    --color-rocket:#5d2c85;
+}
+
+body {
+    background:var(--color-rocket);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background: rgb(245, 243, 246) ;
+    padding: 30px 30px 30px 30px;
+}
+
+a:link {
+ text-decoration:none;
+}
+
+header div {
+    text-align: center;
+}
+
+.espaco {
+word-spacing: 30px;
+padding-bottom: 30px;
+}
+
+.espaco a {
+    font-size: 23px;
+
+    color: white;
+    padding: 9px 15px;
+    
+    background-color: var(--color-rocket);
+    filter:saturate(90%);
+
+    border-radius: 20px;
+
+}
+
+.espaco a:hover{
+    color: rgb(61, 238, 16, 0.733);
+    transition: color 800ms;
+} /*efeito de cor ao passar mouse em cima*/
+
+header img {
+    max-width: 370px;
+}
+
+.text_company{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text_company h1 {
+    font-size: 64px;
+    line-height: 1;
+
+    text-align: center;
+    
+    color: white;
+
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.text_company h1 b {
+    color: rgb(114, 224, 114);
+}
+
+.text_company p {
+    font-size:25px;
+    font-weight: 750;
+
+    color: white;
+    background-color: rgba(19, 14, 14, 0.404);
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    margin-top: 75px;
+    
+    display:table;
+
+    opacity:0.9;
+}
+
+.to_board {
+    font-size:25px;
+    font-weight: 750;
+
+    background: rgba(125, 43, 192, 0.534);
+
+    padding: 45px;
+    border-radius: 20px;
+
+    display: inline-table;
+
+    margin-inline:47%;
+}
+
+.to_board a {
+    color: white;
+}
+
+.to_board a:hover {
+    color: rgba(61, 238, 16, 0.733);
+    transition:color 600ms;
+}
+
+.social {
+    padding-top: 130px;
+    text-align: center;
+}
+
+.social img{
+    background-color: rgba(125, 43, 192, 0.534);
+
+    max-width: 50px;
+    min-width: 50px;
+
+    margin-left: 30px;
+    border-radius: 10px;
+    padding:9px;
+    
+}

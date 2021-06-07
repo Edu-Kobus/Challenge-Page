@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background:white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background: rgb(245, 243, 246) ;
+    padding: 30px 30px 30px 30px;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+header div {
+    text-align: center;
+}
+
+.espaco {
+    word-spacing: 30px;
+    padding-bottom: 30px;
+}
+
+.espaco a {
+    font-size: 23px;
+
+    color: white;
+    padding: 9px 15px;
+    
+    background-color: #5d2c85;
+    filter:saturate(90%);
+
+    border-radius: 20px;
+}
+
+.espaco a:hover{
+    color: rgb(61, 238, 16, 0.733);
+    transition: color 800ms;
+} /*efeito de cor ao passar mouse em cima*/
+
+header img {
+    width: 370px;
+}
+
+.error a{
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 500px;
+    
+    box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 10%)
+}
+
+.error img {
+    margin-left: 40vh;
+}

@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block Style %}
+    <link rel="stylesheet" href="/not-found.css">
+{% endblock Style %}
+
+{% block cabecalho %}
+    <header>
+        <div class="espaco">
+            <h2>
+            <a href="/">Sobre</a>
+            <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+            <a href="mailto:oi@rocketseat.com.br">Email</a>
+            <a href="tel:+5547992078767">Telefone</a>
+            <a href="/courses">Conteúdo</a>
+            </h2>
+        </div>
+        <div class="center">
+            <a href="https://rocketseat.com.br/">
+            <img src="img/boost.png" alt="logo">
+            </a>
+        </div>
+    </header>
+{% endblock cabecalho %}
+
+{% block error %}
+    <div class="error">
+        <a> 404 - Not Found</a>
+        <img src="img/not-found.gif" alt="404 error">
+    </div>
+{% endblock error %}
