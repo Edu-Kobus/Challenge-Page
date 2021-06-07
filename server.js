@@ -25,10 +25,14 @@ server.get("/content-page", function(req, res){
 })
 
 server.get("/videos", function(req, res){
-    const id = req.query.id
-
-    return res.send(`O id fornecido na rota é: ${id}`);
+    return res.render("videos")
 })
+
+// server.get("/videos", function(req, res){
+//     const id = req.query.id
+
+//     return res.send(`O id fornecido na rota é: ${id}`);
+// })
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
