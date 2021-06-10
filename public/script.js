@@ -3,7 +3,7 @@
 const modalOverlay = document.querySelector('.modal-overlay');
 const cards = document.querySelectorAll('.card');
 const modal = document.querySelector(".modal");
-const item = document.querySelectorAll('.card-courses');
+const items = document.querySelectorAll('.courses');
 
 for (let card of cards) {
     card.addEventListener("click", function(){
@@ -16,8 +16,8 @@ for (let card of cards) {
 //=== VIDEO PAGE ===//
 
 for (let item of items) {
-    card.addEventListener("click", function(){
-        const videoId = card.getAttribute("id");
+    item.addEventListener("click", function(){
+        const videoId = item.getAttribute("id");
         window.location.href = `/video?id=${videoId}`
     })
 }
