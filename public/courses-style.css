@@ -1,34 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
 html{
     background: #121214;
+    
+    
 }
 
 .cabecalho {
-
-    width: 90%;
-    max-width: 300px;
-
+    max-width: 100%;
+    margin-left: 28%;
 }
 
-header{
-    display: inline-block;
-    background: rgb(18, 18, 20);
-    box-shadow:rgb(18 18 20) 0px 1rem 2rem;
+nav{
+    display: inline-flex;
+    align-items: center;
+    
 }
 
 .logo img {
-    width: 90%;
-    margin-left: 150px;
+    width: 100%;
+    max-width: 300px;
 }
 
-.courses a{
-    background-color: rgba(68, 60, 60, 0.137);
-    padding: 32px 32px 64px;
-    gap: 16px;
-}
 a:link{
     text-decoration: none;
 }
 
-.text-cabecalho{
-    font-size: 20px;
+
+.text-cabecalho a {
+
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font: bold 800;
 }
+
+
+
+.text h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font: bold 800;
+    margin-top: 4%;
+    margin-left: 30%;
+
+    padding-bottom: 2%;
+}
+
+.courses{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40vh;
+    gap: 4%;
+    flex-direction: column;
+
+    margin: 0% 30% 0% 30%;
+
+    border-radius: 5px 5px 0px 0px;
+
+    width: fit-content;
+    
+}
+
+/*=== CARDS ===*/
+
+.card-one{
+    padding: 40px 64px 0px;
+    background-color: rgb(32, 32, 36);
+    border-bottom: 2px solid red;
+    height: 120%;
+      
+}
+
+
+.card-one h1{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgb(225, 225, 230);
+    width: 158px;
+    padding-top: 20px;
+  
+}
+
+.card-one p{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(168, 168, 179);
+    width: 90%;
+
+}
+
+.card-two{
+    padding: 40px 64px 0px;
+    height: 120%;
+    background-color: rgb(32, 32, 36);
+    border-bottom: 2px solid rgba(190, 100, 231, 0.993);
+}
+
+
+.card-two h1{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgb(225, 225, 230);
+    width: 158px;
+    padding-top: 20px;
+
+}
+
+.card-two p{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(168, 168, 179);
+    width: 90%;
+}
+
+.card-three{
+    padding: 40px 64px 0px;
+    height: 120%;
+    background-color: rgb(32, 32, 36);
+    border-bottom: 2px solid rgb(3, 249, 81);
+}
+
+.card-three h1{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgb(225, 225, 230);
+    width: 158px;
+    padding-top: 20px;
+  
+}
+
+.card-three p{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(168, 168, 179);
+    width: 90%;
+}
+
+.card-four{
+    padding: 40px 64px 0px;
+    height: 120%;
+    background-color: rgb(32, 32, 36);
+    border-bottom: 2px solid rgb(255, 115, 0);
+}
+
+
+.card-four h1{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: rgb(225, 225, 230);
+    width: 158px;
+    padding-top: 20px;
+  
+}
+
+.card-four p{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(168, 168, 179);
+    width: 90%;
+}
+
+
+

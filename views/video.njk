@@ -1,9 +1,9 @@
 <html>
 <head>
-    <title>Content Page</title>
+    <title>{{item.title}}</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/content-style.css">
+    <link rel="stylesheet" href="/courses-style.css">
     <link rel="stylesheet" href="/video-style.css">
 </head>
 
@@ -22,20 +22,24 @@
     </div>
 
     <section>
-        <div class="description">
-            <h1>Universo Java</h1>
+
+        {% for item in items%}
+        <div class="description" id="{{ item.id }}">
+            <h1>{{item.info}}</h1>
         </div>
     
         <div class="card">
             <div class="card_video_container">
-                <iframe src="https://www.youtube.com/embed/BVWdPuNjuiY" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
             </div>
 
             <div class="card_info">
-                <p class="card_price">Free</p>
-                <p class="card_duration">50:30 min</p>
+                <p class="card_price">{{item.price}}</p>
+                <p class="card_duration">{{item.time}}</p>
             </div>
         </div>
+        {% endfor %}
+
     </section>
 
 </body>
