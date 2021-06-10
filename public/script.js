@@ -3,12 +3,22 @@
 const modalOverlay = document.querySelector('.modal-overlay');
 const cards = document.querySelectorAll('.card');
 const modal = document.querySelector(".modal");
+const item = document.querySelectorAll('.card-courses');
 
 for (let card of cards) {
     card.addEventListener("click", function(){
         const blogId = card.getAttribute("id");
         modalOverlay.querySelector("iframe").src = `https://blog.rocketseat.com.br/${blogId}`;
         modalOverlay.classList.add('active');
+    })
+}
+
+//=== VIDEO PAGE ===//
+
+for (let item of items) {
+    card.addEventListener("click", function(){
+        const videoId = card.getAttribute("id");
+        window.location.href = `/video?id=${videoId}`
     })
 }
 

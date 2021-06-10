@@ -29,14 +29,22 @@ server.get("/video", function(req, res){
     const id = req.query.id
 
     const video = videos.find(function(video){
-        if (video.id == id) {
-            return true
-        }
+        return video.id == id
     })
 
-return res.render("video", { item: video })
+    if (!video) {
+        return res.send("Video not found")
+    }
+
+    return res.render("video", { item: video })
 
 })
+
+server.get("/courses/:id", function(req, res) {
+    const id = req.params.id;
+  
+    return res.send(`O id fornecido na rota é: ${id}`);
+  });
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
