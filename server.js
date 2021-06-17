@@ -25,6 +25,7 @@ server.get("/courses", function(req, res){
     return res.render("courses")
 })
 
+//==VIDEO==//
 server.get("/video", function(req, res){
     const id = req.query.id
 
@@ -40,11 +41,7 @@ server.get("/video", function(req, res){
 
 })
 
-// server.get("/courses/:id", function(req, res) {
-//     const id = req.params.id;
-  
-//     return res.send(`O id fornecido na rota é: ${id}`);
-//   });
+
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
